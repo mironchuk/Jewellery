@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Jewellery</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="#">
+
+  <link rel="preload" href="fonts/cormorantgaramond.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramondbold.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/cormorantgaramonditalic.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppinsregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/poppinsbold.woff2" as="font" crossorigin="anonymous">
+</head>
+
+<body>
+  <header class="header header--menu-show header--nojs">
+    <div class="header__wrapper">
+      <div class="header__logo">
+        <a href="index.html" tabindex="2">
+          <svg width="66" height="66" aria-label="Logo">
+            <use xlink:href="img/sprite_auto.svg#icon-logo"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="login-popup login-popup--show">
+    <div class="login-popup__box login-popup__box--nojs">
+      <div class="login-popup__main-pic">
+        <picture>
+          <!-- 1х: 430px; 2x: 860px -->
+          <source type="image/webp" srcset="img/login-pic.webp 1x, img/login-pic2x.webp 2x">
+
+          <!-- 1х: 430px; 2x: 860px -->
+          <img src="img/login-pic.jpg" srcset="img/login-pic2x.jpg 2x" width="430" height="138" alt="jewellerry">
+        </picture>
+      </div>
+      <h2>Log In</h2>
+      <form class="login-popup__form" method="post">
+
+        <input id="popup-email" type="email" name="email" placeholder="Your E-mail" required>
+        <label for="popup-email" class="visually-hidden">Email field</label>
+
+        <input id="password" type="password" name="password" placeholder="Password" required>
+        <label for="password" class="visually-hidden">Password field</label>
+        <a href="#">Forgot your password?</a>
+
+        <button type="submit">Log In</button>
+      </form>
+      <div class="login-popup__sign-up">
+        <p>Don’t have an account?</p>
+        <a href="#">Sign up</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>
