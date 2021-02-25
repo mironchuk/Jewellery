@@ -1,0 +1,11 @@
+root: true
+
+env:
+  browser: true
+
+extends: "htmlacademy/es5"
+
+rules: {
+  "no-new": 0,
+  "no-undefined": 0
+}
